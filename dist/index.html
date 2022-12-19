@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Word Meaning</title>
+
+    <style>body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .meaning-wrapper {
+        display: flex;
+        background-color: rgb(151, 144, 144);
+        padding: 24px;
+        width: 50%;
+        border-radius: 12px;
+        justify-content: center;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      input {
+        border-radius: 12px;
+        padding: 4px;
+        outline: none;
+        border: none;
+      }
+      button {
+        background: rgb(32, 212, 128);
+        font-weight: bold;
+        width: 88px;
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        padding: 12px;
+        cursor: pointer;
+      }
+
+      button:active {
+        transform: scale(0.98);
+      }
+
+      .show-meaning {
+        background-color: rgb(184, 166, 207);
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        overflow-y: scroll;
+      }
+
+      .show-meaning--list {
+        display: flex;
+        justify-content: space-between;
+        color: rgb(17, 16, 16);
+        width: 50%;
+      }</style>
+  </head>
+  <body>
+    <h1>Dictionary App</h1>
+    <div class="meaning-wrapper">
+      <div>
+        <label for="word">Word</label>
+        <input type="text" id="word">
+      </div>
+      <div>
+        <label for="meaning">Meaning</label>
+        <input type="text" id="meaning">
+      </div>
+
+      <button id="add-btn">Add</button>
+    </div>
+    <div class="meaning-wrapper">
+      <div>
+        <label for="find">Find Word</label>
+        <input type="text" id="find">
+      </div>
+
+      <button id="find-btn">Find</button>
+    </div>
+
+    <div class="show-meaning">
+      <div class="show-meaning--list">
+        <h4>Hello</h4>
+        <h4>World</h4>
+      </div>
+    </div>
+    <script src="/word-meaning.e31bb0bc.js"></script>
+  </body>
+</html>
